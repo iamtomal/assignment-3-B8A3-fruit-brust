@@ -32,12 +32,11 @@
 
 </head>
 <body>
-    <header class="container mx-auto">
+    <header class="container mx-auto mt-8">
         <!-- Navigation Bar -->
-            <div class="lg:flex bg-[#F85559] rounded-3xl
-            lg:px-10 lg:py-2">
+            <div class="lg:flex grid grid-cols-2  lg:bg-[#F85559] rounded-full lg:px-10 lg:py-2 mx-auto">
                 
-            <div class=" lg:flex navbar-start">
+            <div class=" lg:flex navbar-start md:hidden hidden">
               <ul class="menu menu-horizontal text-white">
                   <li><a>Home</a></li>
                   <li><a>About us</a></li>
@@ -46,13 +45,13 @@
               </ul>
             </div>
             <div class="navbar-center">
-                <a class="btn btn-ghost normal-case text-xl"> <img class="w-7 h-7" src="images/logo.png" alt="icon"> <sapn class="text-white">Fruit Burst</sapn></a>
+                <a class="btn btn-ghost normal-case text-xl"> <img class="w-7 h-7" src="images/logo.png" alt="icon"> <sapn class="lg:text-white">Fruit Burst</sapn></a>
               </div>
               <div>
                 <div class="navbar-end">
                     <div class="dropdown">
-                      <label tabindex="0" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                      <label tabindex="0" class="btn btn-ghost lg:hidden pl-44 md:pl-80">
+                        <i class="fa-solid fa-bars fa-xl"></i>
                       </label>
                       <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                            <li><a>Home</a></li>
@@ -76,12 +75,12 @@
         
             <section>
                 <!-- Shopping Banner Start here -->
-                <section class="flex justify-center mt-8 ">
+                <section class="flex relative justify-center mt-8 ">
                     <div class="carousel container mx-auto ">
                         <div id="slide1" class="carousel-item relative w-full">
                           <img src="images/banner1.png" class="w-full"/>
                           
-                          <div class="absolute flex gap-5 flex-col justify-center items-center  left-5 right-5 top-[24%] text-white  max-h-fit ">
+                          <div class="absolute flex gap-5 flex-col justify-center items-center  left-5 right-5 top-[24%] text-white">
                             <h1 class="text-xl lg:text-5xl  font-extrabold text-center">Exotic tastes at your <br>doorstep</h1>
                             <p class="text-sm font-medium">We supply highly quality organic products</p>
                             <button class="btn border-none rounded-lg bg-[#F85559;] text-white text-sm font-extrabold normal-case">
@@ -124,7 +123,7 @@
                         <div id="slide4" class="carousel-item relative w-full">
                           <img src="images/banner4.png" class="w-full" />
                           <div class="absolute flex gap-4 flex-col justify-center items-center  left-5 right-5 top-[24%] text-white  max-h-fit">
-                            <h1 class="text-5xl font-extrabold text-center">Exotic tastes at your <br>doorstep</h1>
+                            <h1 class="text-2xl lg:text-5xl font-extrabold text-center">Exotic tastes at your <br>doorstep</h1>
                             <p class="text-sm font-medium">We supply highly quality organic products</p>
                             <button class="btn border-none rounded-lg bg-[#F85559;] text-white text-sm font-extrabold normal-case">
                                  Shop Now
@@ -141,31 +140,35 @@
                 <!-- Shopping Banner End here -->
 
                 <!-- Fruits container start -->
-                <div class="absolute -mt-20 ml-20 flex items-center gap-24 text-center px-6 py-5 bg-white rounded-lg shadow-fruits">
-                <div>
-                  <img class="max-w-[144px] mb-1" src="images/fruit1.png" alt="fruit"/>
-                  <p class="text-xl font-medium">Red Grapes</p>
+                <div class=" absolute ">
+                  <div class=" mt-10 lg:-mt-24 lg:ml-24 lg:gap-16 text-center shadow-lg px-6 lg:py-5 bg-white rounded-lg shadow-fruits grid grid-cols-5 md:grid-cols-2 lg:grid-cols-5" >
+                    <div>
+                      <img class="lg:max-w-[144px] max-w-[70px] mb-1" src="images/fruit1.png" alt="fruit"/>
+                      <p class="lg:text-lg text-xs font-medium">Red Grapes</p>
+                    </div>
+          
+                    <div>
+                        <img class="lg:max-w-[112px] max-w-[60px] mb-1" src="images/fruit2.png" alt="fruit" />
+                      <p class="lg:text-lg text-xs font-medium">Orange</p>
+                    </div>
+          
+                    <div><img class="lg:max-w-[154px] max-w-[60px] mb-1" src="images/fruit3.png" alt="fruit" />
+                      <p class="text-xs font-medium">Mango</p>
+                    </div>
+          
+                    <div>
+                      <img class="lg:max-w-[146px] max-w-[60px] mb-1" src="images/fruit4.png" alt="fruit"/>
+                    <p class="lg:text-lg text-xs font-medium">Strawberry</p>
+                    </div>
+          
+                    <div>
+                      <img class="lg:max-w-[140px] max-w-[60px] mb-1" src="images/fruit5.png" alt="fruit" />
+                      <p class="lg:text-lg text-xs font-medium">Pomegranate</p>
+                    </div>
+                  </div>
+
                 </div>
-      
-                <div>
-                    <img class="max-w-[112px] mb-1" src="images/fruit2.png" alt="fruit" />
-                  <p class="text-xl font-medium">Orange</p>
-                </div>
-      
-                <div><img class="max-w-[154px] mb-1" src="images/fruit3.png" alt="fruit" />
-                  <p class="text-xl font-medium">Mango</p>
-                </div>
-      
-                <div>
-                  <img class="max-w-[146px] mb-1" src="images/fruit4.png" alt="fruit"/>
-                <p class="text-xl font-medium">Strawberry</p>
-                </div>
-      
-                <div>
-                  <img class="max-w-[140px] mb-1" src="images/fruit5.png" alt="fruit" />
-                  <p class="text-xl font-medium">Pomegranate</p>
-                </div>
-              </div>
+                
 
             </section>
             <!-- Fruits container End -->
@@ -220,10 +223,10 @@
 
         <!-- Buy Fruits start here -->
         
-        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-10">
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-10 md:gap-7 gap-5">
           <div class="">
                 <!-- Fruit 1 -->
-        <div class="card mx-auto bg-base-100 shadow-xl">
+        <div class="card mx-auto bg-base-100 border-2 shadow-xl">
           <figure class="px-10 pt-10">
             <img src="images/fruit6.png" alt="12.90$ - 18.85$" class="rounded-xl" />
           </figure>
@@ -284,7 +287,7 @@
 
          <div class="">
           <!-- Fruit 2 -->
-          <div class="card mx-auto bg-base-100 shadow-xl">
+          <div class="card mx-auto bg-base-100 border-2 shadow-xl">
             <figure class="px-10 pt-8">
               <img src="images/fruit7.png" alt="fruit7" class="rounded-xl" />
             </figure>
@@ -344,7 +347,7 @@
           
          <div class="">
             <!-- Fruit 3 -->
-            <div class="card mx-auto bg-base-100 shadow-xl">
+            <div class="card mx-auto bg-base-100 border-2 shadow-xl">
               <figure class="px-10 pt-10">
                 <img src="images/fruit8.png" alt="12.90$ - 18.85$" class="rounded-xl" />
               </figure>
@@ -371,7 +374,7 @@
             <img src="images/fruit12.png" alt="12.90$ - 18.85$" class="rounded-xl" />
           </figure>
           <div class="card-body items-center text-center">
-            <p class="font-extrabold">12.90$ - 122.85$</p>
+            <p class="font-extrabold">12.90$ - 32.85$</p>
             <div class="h-px my-3 bg-gray-200 border-0 dark:bg-gray-700">
             <p class="pt-3">Red Dragon</p>
             <div class="rating pt-2">
@@ -405,12 +408,12 @@
 
           <div class="">
             <!-- Fruit 4 -->
-            <div class="card mx-auto bg-base-100 shadow-xl">
+            <div class="card mx-auto bg-base-100 border-2 shadow-xl">
               <figure class="px-10 pt-10">
                 <img src="images/fruit9.png" alt="12.90$ - 18.85$" class="rounded-xl" />
               </figure>
               <div class="card-body items-center text-center">
-                <h2 class="card-title">102.90$ - 182.85$</h2>
+                <h2 class="card-title">10.90$ - 82.85$</h2>
                 <div class="h-px my-3 bg-gray-200 border-0 dark:bg-gray-700">
                 <p class="pt-3">Banana</p>
                 <div class="rating pt-2">
@@ -432,7 +435,7 @@
             <img src="images/fruit13.png" alt="12.90$ - 18.85$" class="rounded-xl" />
           </figure>
           <div class="card-body items-center text-center">
-            <p class="font-extrabold">122.90$ - 128.85$</p>
+            <p class="font-extrabold">12.90$ - 18.85$</p>
             <div class="h-px my-3 bg-gray-200 border-0 dark:bg-gray-700">
             <p class="pt-3">Banana</p>
             <div class="rating pt-2">
@@ -659,7 +662,7 @@
         <div class="navbar-center">
           <a class="btn btn-ghost normal-case text-2xl"> <img class="w-8 h-8" src="images/logo.png" alt="icon"> <sapn class="text-white">Fruit Burst</sapn></a>
         </div>
-        <div class="grid grid-flow-col gap-7 text-white">
+        <div class="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-7  text-white ">
           <a class="link link-hover">Home</a> 
           <a class="link link-hover">About us</a> 
           <a class="link link-hover">Shop</a> 
